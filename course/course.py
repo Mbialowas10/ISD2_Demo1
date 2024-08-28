@@ -21,20 +21,20 @@ class Course():
         else:
              raise ValueError("Credit hours must be a whole number.")
     
-        @property
-        def name(self) -> str:
-            return self.__name
-        
-        @property
-        def deparment(self) -> Department:
-            return self.__department
+    @property
+    def name(self) -> str:
+        return self.__name
+    
+    @property
+    def deparment(self) -> Department:
+        return self.__department
 
-        @property
-        def credit_hours(self) -> int:
-            return self.__credit_hours
+    @property
+    def credit_hours(self) -> int:
+        return self.__credit_hours
         
-        def __str__(self) ->str:
-            return f"Course: {self.__name} \nDepartment: {self.__department} \nCredit Hours: {self.__credit_hours}"
+    def __str__(self) ->str:
+        return f"Course: {self.__name} \nDepartment: {self.__department} \nCredit Hours: {self.__credit_hours}"
 
         
 
