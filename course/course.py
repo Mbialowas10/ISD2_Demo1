@@ -1,10 +1,11 @@
 from department.department import Department
+from abc import ABC, abstractmethod
 
-class Course():
+class Course(ABC):
     """
      Course Class. Represents a Course taken in a deparment
     """
-    def __init__(self, name:str, department:Department, credit_hours:int):
+    def __init__(self, name:str, department:Department, credit_hours:int, capacity:int, current_enrollment:int):
         """
         Initializes a course object based on received arguments (if valid).
         args:
@@ -30,7 +31,12 @@ class Course():
             self.__credit_hours = credit_hours
         else:
              raise ValueError("Credit hours must be a whole number.")
-    
+
+        if isinstance(capacity,int):
+            # SINGLE underscore for protected attributes
+            self._capacity = capacity
+        else:
+            raise ValueError("Capacity must be numeric")
     @property
     def name(self) -> str:
         """
@@ -63,6 +69,7 @@ class Course():
         return (f"Course: {self.__name}"
                 + f"\nDepartment: {self.__department.name.replace('_',' ').title()}"
                  + f"\nCredit Hours: {self.__credit_hours}")
+
 
         
 
