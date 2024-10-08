@@ -1,8 +1,9 @@
 import random
 from department.department import Department
 from patterns.singleton.singleton_student_manager import SingletonStudentManager
+from student.istudent import IStudent
 
-class Student:
+class Student(IStudent):
     """
     Student class.  Represents a student in a school.
     """

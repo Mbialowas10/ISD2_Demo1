@@ -1,6 +1,13 @@
-from student.student import Student
+
 from department.department import Department
-from course import *
+# from student.istudent import IStudent
+# from student.student import Student
+# from student.council_decorator import CouncilDecorator
+# from student.volunteer_decorator import VolunteerDecorator
+# from student.student_decorator import StudentDecorator
+from student import *
+
+
 
 def main():
     # Given students populated into a list.
@@ -24,7 +31,16 @@ def main():
         print(f"\n{str(student)}") 
 
         ### DECORATOR ###
-    
+        print("Grade Point Average: ", students[0].grade_point_average)
+        volunteer_student = VolunteerDecorator(students[0])
+        print("GPA with volunteer boost: ", volunteer_student.grade_point_average)
+
+        council_student = CouncilDecorator(students[0])
+        print("GPA with student council boost: ", council_student.grade_point_average)
+
+        volunteer_and_council_student = VolunteerDecorator(CouncilDecorator(students[0]))
+        print("GPA with volunteer and council", volunteer_and_council_student.grade_point_average)
+
             
 if __name__ == "__main__":
     main()
