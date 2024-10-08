@@ -1,10 +1,10 @@
 from student.istudent import IStudent
 
-class StudentDecoratoor(IStudent):
+class StudentDecorator(IStudent):
     def __init__(self, student:IStudent):
         self.__student = student
     
     @property
     def grade_point_average(self) -> float:
-        return self.__grade_point_average
+        return self.__student.grade_point_average
 

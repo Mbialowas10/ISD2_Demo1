@@ -1,6 +1,7 @@
-from student.student import Student
+
 from department.department import Department
 from course import *
+from student import *
 
 def main():
     # Given students populated into a list.
@@ -25,6 +26,17 @@ def main():
         print(f"\n{str(student)}") 
 
         ### DECORATOR ###
+        print("Grade Point Average: ",
+              student.grade_point_average)
+        volunteer_student = VolunteerDecorator(student)
+        print(f"GPA with volunteer_average {volunteer_student.grade_point_average}")
+        
+        council_studnet = CouncilDecorator(student)
+        print(f"GPA with council student {council_studnet.grade_point_average}")
+
+        volunteer_and_council_student = VolunteerDecorator(CouncilDecorator(student))
+        print("GPA with volunteer and council",
+              volunteer_and_council_student.grade_point_average)
     
             
 if __name__ == "__main__":
