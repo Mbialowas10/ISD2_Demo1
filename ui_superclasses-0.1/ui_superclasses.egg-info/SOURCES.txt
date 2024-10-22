@@ -1,0 +1,9 @@
+setup.py
+ui_superclasses/__init__.c
+ui_superclasses/__init__.py
+ui_superclasses/details_window.c
+ui_superclasses/lookup_window.c
+ui_superclasses.egg-info/PKG-INFO
+ui_superclasses.egg-info/SOURCES.txt
+ui_superclasses.egg-info/dependency_links.txt
+ui_superclasses.egg-info/top_level.txt

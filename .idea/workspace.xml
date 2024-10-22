@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9db9a78-e776-4f2a-af48-dd62c72ee6d7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/module_3_demonstration.py" beforeDir="false" afterPath="$PROJECT_DIR$/module_3_demonstration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/student/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student/student.py" beforeDir="false" afterPath="$PROJECT_DIR$/student/student.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/setup.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses.egg-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses/__init__.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses/details_window.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses/lookup_window.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_demo/ISD2_Demo1" beforeDir="false" afterPath="$PROJECT_DIR$/student_demo/ISD2_Demo1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_demo/ISD2_Demo1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/student_demo/ISD2_Demo1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_interface/student_listing.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_interface/student_listing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2nA0HEXUb2O6xsobGCYHy9hRgm6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,7 +41,7 @@
   "keyToString": {
     "Python.module_3_demonstration.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Prep__For__Module3",
+    "git-widget-placeholder": "Prep__For__Module4",
     "last_opened_file_path": "/Users/mikebialowas/RRC/FALL_2024_WINTER_2025/IntermediateSoftwareDevelopment/workingDev/intermediate_software_development/demonstration/instructor/isd_demonstration",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -86,6 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728400482853</updated>
       <workItem from="1728400483963" duration="492000" />
+      <workItem from="1729619812828" duration="233000" />
     </task>
     <servers />
   </component>

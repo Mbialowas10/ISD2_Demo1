@@ -5,7 +5,14 @@ from PySide6.QtCore import Qt, Slot
 from student.student import Student
 from department.department import Department
 
+from demo_superclasses.demo_superclasses.listing import Listing
+from demo_superclasses.demo_superclasses.gpa_window import GPAWindow
+
+
+
 # Required
+
+
 
 
 class StudentListing():
@@ -17,6 +24,7 @@ class StudentListing():
         """
         Initialize the window.
         """
+        super().__init__
 
         #Given
         self.students = []
