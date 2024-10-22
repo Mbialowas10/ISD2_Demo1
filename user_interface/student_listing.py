@@ -5,8 +5,10 @@ from PySide6.QtCore import Qt, Slot
 from student.student import Student
 from department.department import Department
 
-from demo_superclasses.demo_superclasses.listing import Listing
-from demo_superclasses.demo_superclasses.gpa_window import GPAWindow
+
+from demo_superclasses.listing import Listing
+from demo_superclasses.gpa_window import GPAWindow
+
 
 
 
@@ -15,7 +17,7 @@ from demo_superclasses.demo_superclasses.gpa_window import GPAWindow
 
 
 
-class StudentListing():
+class StudentListing(Listing):
     """
     A window which displays student data.
     Inherited from Listing which provides the gui design.
@@ -24,14 +26,38 @@ class StudentListing():
         """
         Initialize the window.
         """
-        super().__init__
-
+        super().__init__()
         #Given
         self.students = []
         self.students.append(Student("Janine Wharton", Department.COMPUTER_SCIENCE))
         self.students.append(Student("Freddie Jeffries", Department.MEDICINE))
         self.students.append(Student("Paul Thompson", Department.COMPUTER_SCIENCE))
         self.students.append(Student("Suzanne Marchand", Department.EDUCATION))
+        
+        # row = 0
+        # self.student_table.setRowCount(len(self.students))
+
+        # for student in self.students:
+                
+        #     student_number_item = QTableWidgetItem(str(student.student_number))
+        #     name_item = QTableWidgetItem(student.name)
+        #     grade_point_average_item = QTableWidgetItem(f"{student.grade_point_average:.2f}")
+
+        #     # align text
+        #     grade_point_average_item.setTextAlignment(Qt.AlignRight)
+
+        #     # place item in table
+        #     self.student_table.setItem(row, 0, student_number_item)
+        #     self.student_table.setItem(row, 1, name_item)
+        #     self.student_table.setItem(row, 2, grade_point_average_item)
+
+        #     # advance row for next record
+        #     row += 1
+
+        # self.student_table.resizeColumnsToContents()
+
+
+        
         
 
 

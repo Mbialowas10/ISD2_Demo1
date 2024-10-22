@@ -5,20 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9db9a78-e776-4f2a-af48-dd62c72ee6d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/setup.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses.egg-info/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses.egg-info/SOURCES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses.egg-info/dependency_links.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses.egg-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses/__init__.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses/details_window.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses/lookup_window.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_superclasses/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_superclasses/demo_superclasses.egg-info/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_superclasses/demo_superclasses.egg-info/SOURCES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_superclasses/demo_superclasses.egg-info/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_superclasses/demo_superclasses.egg-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_superclasses/demo_superclasses/__init__.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_superclasses/demo_superclasses/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_superclasses/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_superclasses/setup.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/student_demo/ISD2_Demo1" beforeDir="false" afterPath="$PROJECT_DIR$/student_demo/ISD2_Demo1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/student_demo/ISD2_Demo1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/student_demo/ISD2_Demo1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_superclasses-0.1/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_superclasses-0.1/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_superclasses-0.1/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses.egg-info/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses.egg-info/SOURCES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses.egg-info/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses.egg-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses/__init__.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses/details_window.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_superclasses-0.1/ui_superclasses/lookup_window.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/user_interface/student_listing.py" beforeDir="false" afterPath="$PROJECT_DIR$/user_interface/student_listing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.module_3_demonstration.executor": "Run",
+    "Python.student_listing.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Prep__For__Module4",
     "last_opened_file_path": "/Users/mikebialowas/RRC/FALL_2024_WINTER_2025/IntermediateSoftwareDevelopment/workingDev/intermediate_software_development/demonstration/instructor/isd_demonstration",
@@ -99,6 +109,7 @@
       <updated>1728400482853</updated>
       <workItem from="1728400483963" duration="492000" />
       <workItem from="1729619812828" duration="233000" />
+      <workItem from="1729625601515" duration="137000" />
     </task>
     <servers />
   </component>
@@ -106,6 +117,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/isd_demonstration$module_3_demonstration.coverage" NAME="module_3_demonstration Coverage Results" MODIFIED="1728400925975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/isd_demonstration$student_listing.coverage" NAME="student_listing Coverage Results" MODIFIED="1729625646141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/user_interface" />
+    <SUITE FILE_PATH="coverage/isd_demonstration$module_3_demonstration.coverage" NAME="module_3_demonstration Coverage Results" MODIFIED="1729625634639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

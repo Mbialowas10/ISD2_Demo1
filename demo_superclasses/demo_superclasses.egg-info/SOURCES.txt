@@ -1,7 +1,0 @@
-setup.py
-demo_superclasses/__init__.c
-demo_superclasses/__init__.py
-demo_superclasses.egg-info/PKG-INFO
-demo_superclasses.egg-info/SOURCES.txt
-demo_superclasses.egg-info/dependency_links.txt
-demo_superclasses.egg-info/top_level.txt
