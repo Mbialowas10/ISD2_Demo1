@@ -91,5 +91,11 @@ class GradePointAverageCalculator(GPAWindow):
         
         self.grade_point_average_label.setText(f"{grade_point_average:.2f}")
 
+        ## SIGNAL
+        new_gpa = Signal(str, float)
+
+
+        self.new_gpa.emit(self.student_number_label.text(), grade_point_average)
+
 
 
