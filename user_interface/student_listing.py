@@ -17,14 +17,36 @@ class StudentListing(Listing):
         """
         Initialize the window.
         """
-
         super().__init__()
+
         #Given
         self.students = []
         self.students.append(Student("Janine Wharton", Department.COMPUTER_SCIENCE))
         self.students.append(Student("Freddie Jeffries", Department.MEDICINE))
         self.students.append(Student("Paul Thompson", Department.COMPUTER_SCIENCE))
         self.students.append(Student("Suzanne Marchand", Department.EDUCATION))
+
+        self.student_table.setRowCount(len(self.students))
+
+        row = 0 
+        for student in self.students:
+            # CREATE QTABLE WIDET ITEMS
+            student_number = QTableWidgetItem(str(student.student_number))
+            name_item = QTableWidgetItem(str(student.name))
+            grade_point_average_item = QTableWidgetItem(f"{student.grade_point_average: .2f}")
+
+            #Align text
+            grade_point_average_item.setTextAlignment(Qt.AlignRight)
+
+            # Place items in table
+            self.student_table.setItem(row,0, student_number)
+            self.student_table.setItem(row, 1, name_item)
+            self.student_table.setItem(row,2, grade_point_average_item)
+
+            # advance the row
+            row = row + 1
+        
+        self.student_table.resizeColumnsToContents()
         
 
 
