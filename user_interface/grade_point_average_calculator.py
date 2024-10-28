@@ -6,12 +6,13 @@ from demo_superclasses.gpa_window import GPAWindow
 
 
 
+
 class GradePointAverageCalculator(GPAWindow):
     """
     A window that allows for GradePointAverage to be calculated.
     Inherited from GPAWindow which provides the gui design.
     """
-    
+    new_gpa = Signal(str,float)
 
     def __init__(self, student_number: str, name: str):
         """
@@ -36,7 +37,7 @@ class GradePointAverageCalculator(GPAWindow):
         self.calculate_button.clicked.connect(self.__on_calculate_clicked)
 
 
-
+    @Slot()
     def __enable_button(self):
         """
         Validates the input fields and if valid, enables the Calculate button.
@@ -68,7 +69,7 @@ class GradePointAverageCalculator(GPAWindow):
             self.calculate_button.setEnabled(False)
 
        
-
+    @Slot()
     def __on_calculate_clicked(self):
         """
         Calculates the grade point average based on the data provided.
@@ -90,10 +91,6 @@ class GradePointAverageCalculator(GPAWindow):
             (credit_1 + credit_2 + credit_3))
         
         self.grade_point_average_label.setText(f"{grade_point_average:.2f}")
-
-        ## SIGNAL
-        new_gpa = Signal(str, float)
-
 
         self.new_gpa.emit(self.student_number_label.text(), grade_point_average)
 

@@ -77,13 +77,14 @@ class StudentListing(Listing):
         name = self.student_table.item(row, 1).text()
 
         calculator = GradePointAverageCalculator(student_number, name)
-        
+        # receive signal!
+        calculator.new_gpa.connect(self.__update_gpa)
+
         calculator.exec_()
 
         # receive signal!
-        calculator.new_gpa.connect(self.__update_gpa)
-        
-        calculator.exec_()
+        # calculator.new_gpa.connect(self.__update_gpa)
+        # calculator.exec_()
 
 
 
