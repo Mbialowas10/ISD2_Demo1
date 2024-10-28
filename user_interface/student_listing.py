@@ -6,9 +6,9 @@ from student.student import Student
 from department.department import Department
 
 # Required
+from demo_superclasses.listing import Listing
 
-
-class StudentListing():
+class StudentListing(Listing):
     """
     A window which displays student data.
     Inherited from Listing which provides the gui design.
@@ -18,6 +18,7 @@ class StudentListing():
         Initialize the window.
         """
 
+        super().__init__()
         #Given
         self.students = []
         self.students.append(Student("Janine Wharton", Department.COMPUTER_SCIENCE))
