@@ -7,6 +7,7 @@ from department.department import Department
 
 # Required
 from demo_superclasses.listing import Listing
+from user_interface.grade_point_average_calculator import GradePointAverageCalculator
 
 class StudentListing(Listing):
     """
@@ -47,10 +48,14 @@ class StudentListing(Listing):
             row = row + 1
         
         self.student_table.resizeColumnsToContents()
+
+        # connect the signal (click on table) to slot
+        # method
+        self.student_table.cellClicked.connect(self.__on_select_student)
         
 
 
-    
+    @Slot(int,int)
     def __on_select_student(self, row: int, column: int):
         """
         Obtain values from a clicked row.
@@ -59,8 +64,17 @@ class StudentListing(Listing):
             row (int): Row that has been clicked on.
             column(int): Column that has been clicked on.
         """
-        pass
+        student_number = self.student_table.item(row,0).text()
+        name = self.student_table.item(row,1).text()
 
+        calculator = GradePointAverageCalculator(student_number, name)
+
+        # receive signal
+        calculator.new_gpa.connect(self.__update_gpa)
+
+        calculator.exec_()
+
+    @Slot(str,float)
     def __update_gpa(self, student_number: str, gpa: float):
         """
         Updates the GPA value based on updates made in another window. The 
@@ -69,4 +83,7 @@ class StudentListing(Listing):
             student_number (str): The impacted student number.
             gpa (float): The updated gpa value.
         """
-        pass
+        for row in range(self.student_table.rowCount()):
+            if self.student_table.item(row,0).text() == student_numnber:
+                self.student_table.item(row,2).setText(f"{gpa: .2f}")
+        
