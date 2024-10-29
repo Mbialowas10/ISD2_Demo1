@@ -2,6 +2,7 @@
 from PySide6.QtWidgets import QMessageBox
 from PySide6.QtCore import Slot, Signal
 
+from demo_superclasses.listing import Listing
 from demo_superclasses.gpa_window import GPAWindow
 
 
@@ -14,6 +15,8 @@ class GradePointAverageCalculator(GPAWindow):
     new_gpa = Signal(str, float)
 
     def __init__(self, student_number: str, name: str):
+        
+        
         """
         Initializes the window widgets and displays received data.
         args:
@@ -90,7 +93,7 @@ class GradePointAverageCalculator(GPAWindow):
         
         self.grade_point_average_label.setText(f"{grade_point_average: .2f}")
 
-        self.new_gpa.emit(self.student_label_text(), grade_point_average)
+        self.new_gpa.emit(self.student_number_label.text(), grade_point_average)
 
 
 

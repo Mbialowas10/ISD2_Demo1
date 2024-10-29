@@ -84,6 +84,6 @@ class StudentListing(Listing):
             gpa (float): The updated gpa value.
         """
         for row in range(self.student_table.rowCount()):
-            if self.student_table.item(row,0).text() == student_numnber:
+            if self.student_table.item(row,0).text() == student_number:
                 self.student_table.item(row,2).setText(f"{gpa: .2f}")
         
